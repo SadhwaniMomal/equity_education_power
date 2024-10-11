@@ -1,0 +1,481 @@
+/* navbar........................ */
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+* {
+    font-family: "Rubik", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box !important;
+}
+
+/* Top-Navbar-info CSS */
+.top-navbar-info {
+    background-color: #ffa500;
+    color: #ffffff;
+}
+
+.megaphone-img {
+    width: 50px;
+    height: 50px;
+    animation: pulseFade 3s infinite ease-in-out;
+}
+
+@keyframes pulseFade {
+    0%, 100% {
+        opacity: 0;
+        transform: scale(0.8);
+    }
+    50% {
+        opacity: 1;
+        transform: scale(1.1);
+    }
+}
+
+.btn-toggle {
+    background-color: #ffa500;
+    border: none;
+    color: #fff;
+    width: 100%;
+    text-align: center;
+}
+
+.dropdown-menu {
+    background-color: #ffa500;
+    z-index: 1050; /* Ensures dropdown is in front of other elements */
+    position: absolute; /* Positions the dropdown correctly */
+    border: none !important;
+    outline: none !important;;
+}
+
+.dropdown-item {
+    color: #ffffff;
+}
+
+.dropdown-item:hover {
+    background-color: #ffa500;
+    color: #ffffff;
+}
+
+@media (max-width: 768px) {
+    .top-navbar-info .dropdown {
+        display: flex;
+        justify-content: center;
+    }
+}
+
+/* Navbar CSS */
+.navbar-brand img {
+    width: 150px;
+    height: auto;
+}
+
+.navbar-nav .nav-item .nav-link {
+    margin-right: 20px;
+}
+
+.btn-enroll-s {
+    background-color: #6f42c1;
+    color: white;
+    border-radius: 20px;
+    padding: 8px 20px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.btn-enroll-s:hover {
+    background-color: #6610f2;
+    transform: scale(1.1);
+    color: white;
+}
+
+.navbar-toggler-btn {
+    padding: 8px 16px;
+    border-radius: 50%;
+    background-color: #f8f9fa;
+    color: #6f42c1 !important;
+    border: none;
+}
+
+
+.btn-close-custom {
+    width: 40px;
+    height: 40px;
+    background-color: #6f42c1;
+    color: white !important;
+    border: none;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 0.3s ease;
+}
+
+.btn-close-custom:hover {
+    background-color: #6610f2;
+}
+
+/* section1................................................................................................... */
+/* Custom background with a gradient for the container */
+.custom-background {
+    background: linear-gradient(135deg, #2d3a95, #1a2b7f); /* Blue gradient */
+    color: white; /* White text color */
+    position: relative; /* Relative positioning to control child elements */
+    overflow: hidden; /* Hide any overflow from the floating elements */
+    height: 300px; /* Adjusts the height of the background container */
+    display: flex; /* Flexbox layout for centering content */
+    justify-content: center; /* Center content horizontally */
+    align-items: center; /* Center content vertically */
+    flex-direction: column; /* Stack items vertically */
+    text-align: center; /* Center align text */
+}
+
+/* Styling and animation for floating shapes */
+.floating-shape {
+    position: absolute; /* Absolute positioning for independent movement */
+    z-index: 1; /* Controls stacking order */
+    animation: float 6s infinite ease-in-out; /* Floating animation */
+}
+
+/* Common styles for all floating shapes */
+.floating-shape-1,
+.floating-shape-2,
+.floating-shape-3 {
+    background: rgba(255, 255, 255, 0.1); /* Transparent white background */
+    border-radius: 50%; /* Circular shapes */
+}
+
+/* Individual shape styling with size, position, and animation */
+.floating-shape-1 {
+    width: 150px;
+    height: 150px;
+    top: 40px; /* Adjusted for better centering */
+    left: 50px; /* Increased for balanced placement */
+    animation-duration: 6s; /* Animation duration */
+}
+
+.floating-shape-2 {
+    width: 100px;
+    height: 100px;
+    bottom: 60px; /* Adjusted for spacing */
+    right: 60px; /* Aligned further to the edge */
+    animation-duration: 8s; /* Longer animation duration */
+    animation-delay: 2s; /* Delay before animation starts */
+}
+
+.floating-shape-3 {
+    width: 120px;
+    height: 120px;
+    top: 80px; /* Increased top spacing */
+    right: 100px; /* Adjusted for visual symmetry */
+    animation-duration: 10s; /* Even longer animation duration */
+    animation-delay: 4s; /* Longer delay before animation starts */
+}
+
+/* Styling for small floating dots */
+.floating-dot {
+    width: 15px;
+    height: 15px;
+    background: rgba(255, 255, 255, 0.3); /* Slightly more visible background */
+    border-radius: 50%; /* Circular dots */
+    animation: float 5s infinite ease-in-out; /* Continuous floating animation */
+}
+
+/* Positioning and animation details for individual dots */
+.floating-dot-1 {
+    top: 160px; /* Slightly moved for spacing */
+    left: 100px; /* Adjusted for alignment */
+    animation-duration: 7s; /* Duration of float animation */
+    animation-delay: 1s; /* Start delay */
+}
+
+.floating-dot-2 {
+    bottom: 100px; /* Increased spacing */
+    right: 130px; /* Adjusted for symmetry */
+    animation-duration: 9s; /* Slightly longer animation duration */
+    animation-delay: 3s; /* Animation starts after a delay */
+}
+
+/* Floating play icon styling */
+.floating-play-icon {
+    position: absolute; /* Absolute positioning */
+    font-size: 54px; /* Large icon size */
+    color: rgba(255, 255, 255, 0.2); /* Transparent color */
+    animation: float 12s infinite ease-in-out; /* Slow floating animation */
+}
+
+/* Individual floating play icons with unique position and animation */
+.floating-play-icon-1 {
+    bottom: 120px; /* Moved slightly up for better placement */
+    left: 25%; /* Adjusted for centered layout */
+    animation-duration: 12s; /* Slower animation */
+    animation-delay: 2s; /* Delay before start */
+}
+
+.floating-play-icon-2 {
+    bottom: 180px; /* Increased spacing for separation */
+    left: 65%; /* Positioned to create balance */
+    animation-duration: 14s; /* Longest animation duration */
+    animation-delay: 4s; /* Delay before animation starts */
+}
+
+/* Keyframes defining the floating effect */
+@keyframes float {
+    0% {
+        transform: translateY(0px); /* Starting position */
+    }
+    50% {
+        transform: translateY(-20px); /* Move up */
+    }
+    100% {
+        transform: translateY(0px); /* Return to start */
+    }
+}
+
+/* Breadcrumb link styling */
+.breadcrumb-item.active {
+  color: #ffa500; /* Link color (orange) */
+}
+
+
+/* Styling for breadcrumb arrow icons */
+.custom-breadcrumb .fa-angles-right {
+    margin: 0 8px; /* Space around arrow icon */
+    color: white; /* Icon color */
+}
+
+/* Layout styling for the breadcrumb */
+.custom-breadcrumb {
+    display: flex;
+    justify-content: center; /* Center breadcrumb items */
+    align-items: start;
+    list-style: none; /* Remove default list styling */
+}
+ /*card-section2................................................................................................... */ 
+
+
+
+.custom-col {
+    /* width: 100%; Set the column width to 100% */
+    display: flex; /* Make the column a flex container */
+    justify-content: center; /* Center content horizontally */
+    align-items: center; /* Center content vertically */
+    box-shadow: rgba(219, 206, 206, 0.404) 0px 0px 0px 1px;
+    margin: 30px; /* Optional: Margin between columns */
+}
+
+.cards {
+    width: 100%; /* Make the card fill the full width of the column */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.icon-circle {
+    background-color: #faa850; /* Circle background color */
+    width: 60px;
+    height: 60px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    border-radius: 50%; /* Make it a circle */
+    /* padding: 20px; Add padding to create space around the icon */
+    /* width: 30%; */
+}
+
+.icon-circle i {
+    color: #f3e3ce; /* Set icon color */
+    font-size: 16px;
+}
+
+.equal-height {
+    min-height: 250px; /* Set a minimum height for the card */
+}
+
+
+/* section3....................................................................................................... */
+.contect-form-heading{
+    font-weight: bold;
+    font-size: 44px;
+
+}
+.contact-form-container {
+    margin: auto; /* Center the form horizontally */
+    padding: 20px; /* Add padding for aesthetics */
+    background-color: #f9f9f9; /* Light background color */
+    border-radius: 10px; /* Rounded corners */
+    /* box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); Subtle shadow */
+    max-width: 800px; /* Maximum width for larger devices */
+}
+.custom-input-group {
+    position: relative; /* Set position relative for the input group */
+    width: 100%; /* Make input group take full width */
+    border: 1px solid rgb(255, 255, 255); /* Set border color to black */
+    transition: border-color 0.3s; /* Smooth transition for border color on focus */
+}
+/*  */
+
+
+.custom-form-control {
+    width: 100%; /* Make the input full width */
+    padding-left: 40px; /* Add padding to the left for the icon */
+    color: #dde4eb; /* Input text color */
+ 
+}
+
+.custom-form-control:focus {
+    border-color: rgba(255, 238, 238, 0.295); /* Change border color to black on focus */
+    outline: none; /* Remove default outline */
+}
+
+
+.input-icon {
+    position: absolute; /* Position the icon absolutely */
+    left: 10px; /* Position from the left */
+    top: 50%; /* Center vertically */
+    transform: translateY(-50%); /* Adjust for vertical centering */
+    color: #a9abad; /* Input text color */
+
+}
+
+.btns{
+   background-color: #6045ff;
+   color: #ccd2d8;
+   font-size: 10px;
+   border-radius: 60px;
+   font-weight: bold;
+}
+.contect-submit-btn{
+    position: relative;
+    display: inline-block;
+    padding: 15px 30px;
+    text-align: center;
+    font-size: 14px;
+    letter-spacing: 1px;
+    text-decoration: none;
+    color: #725AC1;
+    background: #6045ff;
+    cursor: pointer;
+    transition: ease-out 0.5s;
+    border: 2px solid #725AC1;
+    /* border-radius: 10px; */
+    box-shadow: inset 0 0 0 0 #725AC1;
+  }
+  
+  .contect-submit-btn:hover {
+    color: white;
+    box-shadow: inset 0 -100px 0 0 #6844df;
+  }
+  
+  .contect-submit-btn:active {
+    transform: scale(0.9);
+  }
+
+/* footer4................................................................................................... */
+.footer-section {
+    color: rgba(0, 0, 0, 0.685);
+    padding: 30px 0;
+    
+}
+
+.footer-section .logo-img {
+    width: 200px;
+    height: auto;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.footer-section h6 {
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+
+.footer-section .icons i {
+    font-size: 15px;
+    color: #000000;
+    padding: 10px; /* Add some padding to make the icon area larger */
+    transition: all 0.3s ease;
+    border: 1px solid rgba(155, 147, 147, 0.315);
+    width: 13%;
+    /* height: 6vh; */
+    
+}
+
+.footer-section .icons i:hover {
+    background-color: #6045ff;
+
+    color: rgb(255, 255, 255); /* Icon color on hover */
+    border-radius: 10%; /* 10% rounded corners */
+    transition: all 0.3s ease;
+    border: 1px solid white;
+}
+
+.footer-section h5 {
+    padding-top: 20px;
+    margin-bottom:22px;
+    color: rgb(7, 7, 7);
+
+}
+
+.footer-section ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.footer-section ul li {
+    margin-bottom: 18px;
+    font-size: 16px;
+}
+
+.footer-section ul li a {
+    color: rgba(0, 0, 0, 0.685);
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer-section ul li a:hover {
+    color: #1648b4;
+}
+
+/* Email form styling */
+.email-wrapper {
+    position: relative;
+}
+
+.email-wrapper input {
+    width: 100%;
+    padding-left: 60px; 
+    border-radius: 4px;
+    height: 50px;
+    /* padding: 27px; */
+}
+
+.email-wrapper i {
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #b6b4b2;
+    font-size: 16px;
+}
+
+.footer-section form .submit-btn {
+    width: 100%;
+    border-radius: 5px;
+    background-color: #6045ff;
+
+
+}
+.copyright {
+    margin: 0;
+    color: #ffffff; /* Text color */
+    font-size: 15px; /* Font size */
+    padding: 20px 0; /* Padding for spacing */
+    text-align: center; /* Center the text */
+    border-top: 1px solid #ffffff; /* Optional: border on top */
+   background-color: #6045ff;
+
+    
+}
