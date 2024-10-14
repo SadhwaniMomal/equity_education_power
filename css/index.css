@@ -45,13 +45,13 @@
     content: "";
     position: absolute;
     right: -30px;
-    top: -20%;
+    top: -25%;
     width: 270px;
-    height: 270px;
+    height: 270px; /* Added height */
     background: url("../image/stat-bg.png") no-repeat;
     background-position: 100%;
     background-size: contain;
-    z-index: 1;
+    z-index: 1; /* Ensure it's on top of other elements */
   }
 
   .student-img {
@@ -65,7 +65,7 @@
   }
 
   .stats-card {
-    background-color: #ffa500;
+    background-color: #ffa500; /* Orange background */
     padding: 20px;
     color: white;
     border-radius: 2px;
@@ -91,9 +91,13 @@
     justify-content: center;
     align-items: center;
     border-radius: 50%;
-    width: 55px;
-    height: 55px;
+    width: 55px !important;
+    height: 55px !important;
     background-color: #f7c059;
+  }
+
+  .stats-card .stat-item span {
+    font-size: 1.2rem;
   }
 
   .stats-card .stat-number {
@@ -109,65 +113,31 @@
     width: 330px;
     padding: 0px 34px !important;
   }
-
   @media (max-width: 768px) {
-    .hero-section h1 {
-      font-size: 3rem;
-      font-weight: bold;
-      padding: 10px;
+    .banner-bottom{
+      height: 70vh;
+      width: 70vw;
     }
-
-    .hero-section .highlight-text {
-      color: #ffa500;
-      position: relative;
-    }
-
-    .banner-bottom {
-      height: 95vh;
-    }
-
     .stat-home-right {
-      right: 0;
-      top: 50%;
-      transform: translateY(-50%);
-      width: 330px;
-      padding: 0px 20px !important;
-    }
+    right: 0%;
+    top: 78%;
+    transform: translateY(-50%);
+    width: 330px;
+    padding: 0px 20px !important;
+  }
   }
 
   @media (max-width: 430px) {
-    .hero-section {
-      padding: 0px 10px;
-    }
-    .hero-section h1 {
-      font-size: 3rem;
-      font-weight: bold;
-      padding: 10px;
-    }
-
-    .hero-section .highlight-text {
-      color: #ffa500;
-      position: relative;
-    }
-
-    .hero-section p {
-      padding: 10px;
-      font-size: 1.2rem;
-      color: #6c757d;
-    }
-
     .stat-home-right {
-      right: -30%;
-      top: 50%;
-      transform: translateY(-50%);
-      width: 330px;
-      padding: 0px 0px !important;
-    }
-
-    .stats-card {
-      background-color: #ffa500;
-      opacity: 0.8;
-    }
+    /* right: -30%; */
+    transform: translateY(-50%);
+    width: 330px;
+    padding: 0px 0px !important;
+  }
+  .stats-card{
+    background-color: #ffa500; /* Orange background */
+    opacity: 0.9;
+  }
   }
 
   /* home - Section - 3 */
@@ -197,22 +167,6 @@
     z-index: 1;
   }
 
-  /* Active course card styling */
-  /* .course-columns-active {
-    border: none;
-    background-color: white;
-    box-shadow: rgba(255, 255, 255, 0.25) 0px 54px 55px, rgba(255, 255, 255, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
-    cursor: pointer;
-    
-  } */
-
-  .course-columns-active .col-icons {
-    background-color: #ff9000;
-    opacity: 0.6;
-    color: #fff;
-    box-shadow: rgba(255, 144, 0, 1) 0px 13px 27px -5px,
-      rgba(255, 144, 0, 1) 0px 8px 16px -8px;
-  }
 
   /* Hover effects for course columns */
   .course-columns:hover {
