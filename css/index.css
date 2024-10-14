@@ -1,0 +1,231 @@
+ /* home - section -1  */
+ .hero-section {
+    padding: 100px 0;
+    text-align: left;
+  }
+
+  .hero-section h1 {
+    font-size: 4rem;
+    font-weight: bold;
+  }
+
+  .hero-section .highlight-text {
+    color: #ffa500;
+    position: relative;
+  }
+
+  .hero-section p {
+    font-size: 1.2rem;
+    color: #6c757d;
+  }
+
+  .btn-consultation {
+    background-color: #6f42c1;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 50px;
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+    transition: all 0.3s ease;
+  }
+
+  .btn-consultation:hover {
+    background-color: #5a2d91;
+    color: white;
+    transform: scale(1.03);
+  }
+
+
+  /* home section-2 */
+  .banner-bottom {
+    position: relative;
+    width: 100%;
+  }
+
+  .banner-bottom::before {
+    content: "";
+    position: absolute;
+    right: -30px;
+    top: -20%;
+    width: 270px;
+    height: 270px;
+    background: url("../image/stat-bg.png") no-repeat;
+    background-position: 100%;
+    background-size: contain;
+    z-index: 1;
+  }
+
+  .student-img {
+    overflow: hidden;
+    height: 100%;
+  }
+
+  .student-img img {
+    width: 100% !important;
+    object-fit: cover;
+  }
+
+  .stats-card {
+    background-color: #ffa500;
+    padding: 20px;
+    color: white;
+    border-radius: 2px;
+    text-align: left;
+  }
+
+  .stats-card h4 {
+    font-weight: bold;
+    font-size: 1.5rem;
+  }
+
+  .stats-card .stat-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+
+  .stats-card .stat-item i {
+    font-size: 2rem;
+    margin-right: 15px;
+    border: 2px dashed #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    width: 55px;
+    height: 55px;
+    background-color: #f7c059;
+  }
+
+  .stats-card .stat-number {
+    font-size: 1.8rem;
+    font-weight: bold;
+  }
+
+  .stat-home-right {
+    position: absolute;
+    right: 10%;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 330px;
+    padding: 0px 34px !important;
+  }
+
+  @media (max-width: 768px) {
+    .hero-section h1 {
+      font-size: 3rem;
+      font-weight: bold;
+      padding: 10px;
+    }
+
+    .hero-section .highlight-text {
+      color: #ffa500;
+      position: relative;
+    }
+
+    .banner-bottom {
+      height: 95vh;
+    }
+
+    .stat-home-right {
+      right: 0;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 330px;
+      padding: 0px 20px !important;
+    }
+  }
+
+  @media (max-width: 430px) {
+    .hero-section {
+      padding: 0px 10px;
+    }
+    .hero-section h1 {
+      font-size: 3rem;
+      font-weight: bold;
+      padding: 10px;
+    }
+
+    .hero-section .highlight-text {
+      color: #ffa500;
+      position: relative;
+    }
+
+    .hero-section p {
+      padding: 10px;
+      font-size: 1.2rem;
+      color: #6c757d;
+    }
+
+    .stat-home-right {
+      right: -30%;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 330px;
+      padding: 0px 0px !important;
+    }
+
+    .stats-card {
+      background-color: #ffa500;
+      opacity: 0.8;
+    }
+  }
+
+  /* home - Section - 3 */
+  .course-columns {
+    border: 1px solid #e5e7ed;
+    margin: 20px 12px 10px 5px ;
+    padding: 0px 20px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+  }
+
+  /* Icon styling inside each course card */
+  .col-icons {
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    margin-right: 15px;
+    background-color: rgba(148, 146, 188, 0.2);
+  }
+
+  .course-columns .col-icons i {
+    color: #6c63ff;
+    font-weight: 700 !important;
+    z-index: 1;
+  }
+
+  /* Active course card styling */
+  /* .course-columns-active {
+    border: none;
+    background-color: white;
+    box-shadow: rgba(255, 255, 255, 0.25) 0px 54px 55px, rgba(255, 255, 255, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    cursor: pointer;
+    
+  } */
+
+  .course-columns-active .col-icons {
+    background-color: #ff9000;
+    opacity: 0.6;
+    color: #fff;
+    box-shadow: rgba(255, 144, 0, 1) 0px 13px 27px -5px,
+      rgba(255, 144, 0, 1) 0px 8px 16px -8px;
+  }
+
+  /* Hover effects for course columns */
+  .course-columns:hover {
+    transform: translateY(-5px);
+    border: none;
+    background-color: white;
+    box-shadow: rgba(255, 255, 255, 0.25) 0px 54px 55px, rgba(255, 255, 255, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  }
+
+  .course-columns:hover .col-icons{
+    background-color: #ff9000;
+    opacity: 0.6;
+    box-shadow: rgba(255, 144, 0, 1) 0px 13px 27px -5px,
+      rgba(255, 144, 0, 1) 0px 8px 16px -8px;
+      color: #fff;
+  }
