@@ -218,3 +218,82 @@
       rgba(255, 144, 0, 1) 0px 8px 16px -8px;
       color: #fff;
   }
+
+
+  /* <!-- Home Section 4 free consult --> */
+  .free-consult-section {
+    background-image: url('../image/cta-bg.jpg');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    padding: 100px 0;
+    position: relative;
+  }
+
+  .free-consult-text {
+    z-index: 1;
+  }
+
+  .btn-custom {
+    background-color: #ececec;
+    color: #000;
+    border-radius: 30px;
+    padding: 10px 20px;
+  }
+
+  .highlight-text {
+    color: #f7931d;
+    font-weight: bold;
+  }
+
+  .video-icon {
+    width: 85px;
+    height: 85px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ececec;
+    padding: 15px;
+    border-radius: 50%;
+    animation: pulse 2s infinite;
+  }
+
+  .free-badge {
+    background-color: #fff;
+    color: #6c63ff;
+    padding: 2px 10px;
+    border-radius: 15px;
+    font-size: 0.9rem;
+    text-align: center;
+  }
+
+  .video-icon a i {
+    font-size: 50px;
+    color: #f7931d;
+  }
+
+  /* Overlay for better contrast with the background image */
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+
+  /* Pulse animation */
+  @keyframes pulse {
+    0% {
+      transform: scale(1);
+      box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.7);
+    }
+    70% {
+      transform: scale(1.1);
+      box-shadow: 0 0 0 10px rgba(255, 255, 255, 0);
+    }
+    100% {
+      transform: scale(1);
+      box-shadow: 0 0 0 0 rgba(255, 255, 255, 0);
+    }
+  }
