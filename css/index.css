@@ -290,10 +290,56 @@
     }
     70% {
       transform: scale(1.1);
-      box-shadow: 0 0 0 10px rgba(255, 255, 255, 0);
+      box-shadow: 0 0 0 10px #ffffff00;
     }
     100% {
       transform: scale(1);
       box-shadow: 0 0 0 0 rgba(255, 255, 255, 0);
     }
+  }
+
+  /* Home Section core feature */
+  .tab-core-link {
+    color: #6c757d;
+    font-weight: 500;
+    text-decoration: none;
+    padding: 10px 15px;
+    display: inline-block;
+  }
+
+  .tab-core-link.active {
+    color: #6f42c1;
+    border-bottom: 2px solid #6f42c1;
+  }
+
+  .fade {
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+  }
+
+  .show {
+    opacity: 1;
+  }
+
+  .content-section {
+    display: none;
+  }
+
+  .content-section.active {
+    display: block;
+  }
+
+  .small-img {
+    width: 200px;
+    bottom: -20px;
+    right: 0px;
+    border: 2px solid #fff;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+  }
+
+  /* Additional spacing for the list items */
+  .list-elements li {
+    font-size: 1.1rem;
+    margin-bottom: 10px;
   }
