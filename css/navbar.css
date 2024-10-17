@@ -6,10 +6,17 @@
     padding: 0;
     box-sizing: border-box !important;
 }
+:root{
+    --primary-color: #cea743;
+    --secondary-color: #333;
+    --hover-color: #888;
+    --main-color: #258d48;
+}
+
 
 /* Top-Navbar-info CSS */
 .top-navbar-info {
-    background-color: #ffa500;
+    background-color: var(--primary-color);
     color: #ffffff;
 }
 
@@ -31,7 +38,7 @@
 }
 
 .btn-toggle {
-    background-color: #ffa500;
+    background-color: var( --primary-color);
     border: none;
     color: #fff;
     width: 100%;
@@ -39,7 +46,7 @@
 }
 
 .dropdown-menu {
-    background-color: #ffa500;
+    background-color: var( --primary-color);
     z-index: 1050; /* Ensures dropdown is in front of other elements */
     position: absolute; /* Positions the dropdown correctly */
     border: none !important;
@@ -51,7 +58,7 @@
 }
 
 .dropdown-item:hover {
-    background-color: #ffa500;
+    background-color: var( --primary-color);
     color: #ffffff;
 }
 
@@ -72,16 +79,16 @@
     margin-right: 20px;
 }
 
-.btn-enroll {
-    background-color: #6f42c1;
+.btn-enroll-s {
+    background-color: var(--main-color);
     color: white;
     border-radius: 20px;
     padding: 8px 20px;
     transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
-.btn-enroll:hover {
-    background-color: #6610f2;
+.btn-enroll-s:hover {
+    background-color: var(--primary-color);
     transform: scale(1.1);
     color: white;
 }
@@ -90,7 +97,7 @@
     padding: 8px 16px;
     border-radius: 50%;
     background-color: #f8f9fa;
-    color: #6f42c1 !important;
+    color: var(--main-color) !important;
     border: none;
 }
 
@@ -98,7 +105,7 @@
 .btn-close-custom {
     width: 40px;
     height: 40px;
-    background-color: #6f42c1;
+    background-color: var( --main-color);
     color: white !important;
     border: none;
     border-radius: 8px;
@@ -109,5 +116,5 @@
 }
 
 .btn-close-custom:hover {
-    background-color: #6610f2;
+    background-color: var(--primary-color);
 }
