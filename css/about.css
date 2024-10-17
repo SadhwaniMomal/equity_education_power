@@ -11,12 +11,18 @@ body {
   overflow-x: hidden;
   width: 100%;
 }
+:root{
+  --primary-color: #258d48;
+  --secondary-color: #333;
+  --hover-color: #888;
+  --main-color: #cea743;
 
+}
 /* about container section css */
 
 /* Custom background with a gradient for the container */
 .custom-background {
-  background: linear-gradient(135deg, #2d3a95, #1a2b7f); /* Blue gradient */
+  background: linear-gradient(135deg, var(--primary-color), var(--primary-color)); /* Blue gradient */
   color: white; /* White text color */
   position: relative; /* Relative positioning to control child elements */
   overflow: hidden; /* Hide any overflow from the floating elements */
@@ -153,7 +159,7 @@ body {
 
 /* Styles for the first image */
 .highlight-text {
-  color: #ff9900;
+  color: var(--primary-color);
   font-weight: bold;
 }
 
@@ -183,7 +189,7 @@ body {
 }
 
 .badge-custom {
-  background-color: #6a5acd;
+  background-color: var(--main-color);
   color: white;
   padding: 5px 15px;
   border-radius: 25px;
@@ -369,10 +375,11 @@ body {
 
 /* Counter Section Here */
 .counter-section {
-  background-color: #6259ca; /* Updated color to match the design */
+  background-color: var(--primary-color); /* Updated color to match the design */
   color: white;
   padding: 30px 0;
   text-align: center;
+  opacity: 0.7;
   border-radius: 10px; /* Rounded edges for smooth appearance */
 }
 
@@ -456,7 +463,7 @@ body {
 
 /* Styling for the badge displayed at the top of the page */
 .badge {
-  background-color: #6c63ff;
+  background-color: var(--main-color);
   color: white;
   padding: 5px 10px;
   border-radius: 10px;
@@ -465,7 +472,7 @@ body {
 
 /* Highlighted text style used in the heading */
 .highlight-text {
-  color: #ff9000;
+  color: var(--primary-color);
 }
 
 /* Learning process section css */
@@ -484,7 +491,7 @@ body {
 }
 
 .step-number {
-  background-color: #6c63ff;
+  background-color: var(--primary-color);
   color: white;
   border-radius: 50%;
   width: 35px;
@@ -496,8 +503,8 @@ body {
   position: absolute;
   top: 10px;
   right: 100px;
-  box-shadow: rgba(108, 99, 255, 1) 0px 54px 55px,
-    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(108, 99, 255, 1) 0px 4px 6px,
+  box-shadow: var(--primary-color) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, var(--primary-color) 0px 4px 6px,
     rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
 }
 
@@ -629,7 +636,7 @@ body {
 }
 
 .accordion-header.active .icon {
-  background-color: #2d3a95;
+  background-color: var(--primary-color);
 }
 
 /* Accordion body styling */
@@ -659,7 +666,7 @@ body {
 }
 
 .subscribe {
-  background-color: #6c63ff;
+  background-color: var(--primary-color);
   padding: 50px 0; /* Adds some padding to the section */
   background-image: radial-gradient(
     circle,
@@ -672,7 +679,7 @@ body {
 
 .subscribe-text {
   background-color: #fff;
-  color: #6c63ff;
+  color: var(--main-color);
   padding: 5px 10px;
   border-radius: 15px;
   font-size: 0.9rem;
@@ -695,7 +702,7 @@ body {
 }
 
 .subscribe-form .btn-custom {
-  background-color: #ff9d3b; /* Button color */
+  background-color: var(--main-color); /* Button color */
   color: white;
   border: none;
   border-radius: 50px;
