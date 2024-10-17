@@ -1,6 +1,11 @@
- 
+:root{
+  --primary-color: #258d48;
+  --secondary-color: #333;
+  --hover-color: #888;
+  --main-color: #cea743;
+
+}
  /* home - section -1  */
- 
  .hero-section {
     padding: 100px 0;
     text-align: left;
@@ -12,7 +17,7 @@
   }
 
   .hero-section .highlight-text {
-    color: #ffa500;
+    color: var(--primary-color);
     position: relative;
   }
 
@@ -22,7 +27,7 @@
   }
 
   .btn-consultation {
-    background-color: #6f42c1;
+    background-color: var(--main-color);
     color: white;
     padding: 10px 20px;
     border-radius: 50px;
@@ -31,7 +36,7 @@
   }
 
   .btn-consultation:hover {
-    background-color: #5a2d91;
+    background-color: var(--primary-color);
     color: white;
     transform: scale(1.03);
   }
@@ -81,7 +86,7 @@
   }
 
   .stats-card {
-    background-color: #ffa500; /* Orange background */
+    background-color: var(--main-color); /* Orange background */
     padding: 20px;
     color: white;
     border-radius: 2px;
@@ -107,9 +112,8 @@
     justify-content: center;
     align-items: center;
     border-radius: 50%;
-    width: 55px !important;
-    height: 55px !important;
-    background-color: #f7c059;
+    width: 65px !important;
+    height: 62px !important;
   }
 
   .stats-card .stat-item span {
@@ -171,7 +175,7 @@
     padding: 0px 0px !important;
   }
   .stats-card{
-    background-color: #ffa500; /* Orange background */
+    background-color: var(--main-color); /* Orange background */
     opacity: 0.9;
   }
   }
@@ -198,7 +202,7 @@
   }
 
   .course-columns .col-icons i {
-    color: #6c63ff;
+    color: var(--primary-color);
     font-weight: 700 !important;
     z-index: 1;
   }
@@ -213,10 +217,10 @@
   }
 
   .course-columns:hover .col-icons{
-    background-color: #ff9000;
+    background-color: #fff;
     opacity: 0.6;
-    box-shadow: rgba(255, 144, 0, 1) 0px 13px 27px -5px,
-      rgba(255, 144, 0, 1) 0px 8px 16px -8px;
+    box-shadow: var(--primary-color) 0px 13px 27px -5px,
+      var(--primary-color) 0px 8px 16px -8px;
       color: #fff;
   }
 
@@ -243,7 +247,7 @@
   }
 
   .highlight-text {
-    color: #f7931d;
+    color: var(--primary-color);
     font-weight: bold;
   }
 
@@ -261,7 +265,7 @@
 
   .free-badge {
     background-color: #fff;
-    color: #6c63ff;
+    color: var(--primary-color);
     padding: 2px 10px;
     border-radius: 15px;
     font-size: 0.9rem;
@@ -270,7 +274,7 @@
 
   .video-icon a i {
     font-size: 50px;
-    color: #f7931d;
+    color: var(--main-color);
   }
 
   /* Overlay for better contrast with the background image */
@@ -309,8 +313,11 @@
   }
 
   .tab-core-link.active {
-    color: #6f42c1;
-    border-bottom: 2px solid #6f42c1;
+    color: var(--primary-color);
+    border-bottom: 2px solid var(--primary-color);
+  }
+  .tab-core-link:hover{
+    color: var(--primary-color);
   }
 
   .fade {
@@ -377,7 +384,7 @@
   .course-title {
     font-size: 20px;
     font-weight: bold;
-    color: #6f42c1;
+    color: var(--primary-color);
   }
 
   .course-meta {
@@ -398,7 +405,7 @@
   }
 
   .enroll-now {
-    color: #6f42c1;
+    color: var(--main-color);
     font-weight: bold;
     font-size: 16px;
     text-decoration: none;
@@ -425,14 +432,14 @@
     background-color: transparent;
     border: none;
     outline: none;
-    color: #6c63ff;
+    color: var(--main-color);
     padding: 10px 20px;
     border-radius: 50%;
     cursor: pointer;
     transition: color 0.3s ease;
   }
   .carousel-buttons .btn-arrows:hover {
-    color: #ff9000;
+    color: var(--primary-color);
   }
   .card {
     min-width: 30%;

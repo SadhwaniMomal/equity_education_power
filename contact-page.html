@@ -26,6 +26,7 @@
       referrerpolicy="no-referrer"
     />
     <!-- style link -->
+     <link rel="stylesheet" href="css/navbar.css">
     <link rel="stylesheet" href="css/contact.css" />
     <link rel="stylesheet" href="css/about.css" />
   </head>
@@ -242,91 +243,49 @@
       </div>
     </div>
     <!-- /*form-section3................................ */ -->
-    <div class="container contact-form-container mt-5 mb-5">
+    <div class="container contact-form-container mt-5">
       <h1 class="contact-form-heading text-center fw-bold">Contact With Us</h1>
-      <p class="text-center text-secondary">
-        We are here to answer any questions you may have at any time.
-      </p>
-
+      <p class="text-center content-para">We are here to answer any questions you may have at any time.</p>
+  
       <form>
-        <div class="row mb-3 mt-5">
-          <div class="col-12 col-md-6">
-            <div class="input-group custom-input-group">
-              <input
-                type="text"
-                class="form-control custom-form-control"
-                id="name"
-                placeholder="Your Name"
-                required
-              />
-              <span class="input-icon"><i class="fa-solid fa-user"></i></span>
-            </div>
+          <div class="row  mt-5">
+              <div class="col-12 col-md-6 mb-2">
+                  <div class="input-group custom-input-group">
+                      <input type="text" class="form-control custom-form-control" id="name" placeholder="Your Name" required>
+                      <span class="input-icon"><i class="fa-solid fa-user"></i></span>
+                  </div>
+              </div>
+              <div class="col-12 col-md-6 mb-2">
+                  <div class="input-group custom-input-group">
+                      <input type="email" class="form-control custom-form-control" id="email" placeholder="Your Email" required>
+                      <span class="input-icon"><i class="fa-solid fa-envelope"></i></span>
+                  </div>
+              </div>
           </div>
-          <div class="col-12 col-md-6">
-            <div class="input-group custom-input-group">
-              <input
-                type="email"
-                class="form-control custom-form-control"
-                id="email"
-                placeholder="Your Email"
-                required
-              />
-              <span class="input-icon"
-                ><i class="fa-solid fa-envelope"></i
-              ></span>
-            </div>
+          <div class="row">
+              <div class="col-12 col-md-6 mb-2">
+                  <div class="input-group custom-input-group">
+                      <input type="text" class="form-control custom-form-control" id="subject" placeholder="Your Subject" required>
+                      <span class="input-icon"><i class="fa-solid fa-pencil-alt"></i></span>
+                  </div>
+              </div>
+              <div class="col-12 col-md-6 mb-2">
+                  <div class="input-group custom-input-group">
+                      <input type="tel" class="form-control custom-form-control" id="phone" placeholder="Your Phone Number" required>
+                      <span class="input-icon"><i class="fa-solid fa-phone"></i></span>
+                  </div>
+              </div>
           </div>
-        </div>
-        <div class="row mb-3">
-          <div class="col-12 col-md-6">
-            <div class="input-group custom-input-group">
-              <input
-                type="text"
-                class="form-control custom-form-control"
-                id="subject"
-                placeholder="Your Subject"
-                required
-              />
-              <span class="input-icon"
-                ><i class="fa-solid fa-pencil-alt"></i
-              ></span>
+          <div class="mb-3 mt-2">
+              <textarea class="form-control custom-form-control" id="message" rows="5" placeholder="Your Message" required></textarea>           
             </div>
+          <div class="text-center my-5">
+              <button type="submit" class="contect-submit-btn btns px-4 py-3 text-white">Submit Now</button>
           </div>
-          <div class="col-12 col-md-6">
-            <div class="input-group custom-input-group">
-              <input
-                type="tel"
-                class="form-control custom-form-control"
-                id="phone"
-                placeholder="Your Phone Number"
-                required
-              />
-              <span class="input-icon"><i class="fa-solid fa-phone"></i></span>
-            </div>
-          </div>
-        </div>
-        <div class="mb-3">
-          <textarea
-            class="form-control custom-form-control"
-            id="message"
-            rows="5"
-            placeholder="Your Message"
-            required
-          ></textarea>
-        </div>
-        <div class="text-center my-5">
-          <button
-            type="submit"
-            class="contect-submit-btn btns px-4 py-3 text-white"
-          >
-            Submit Now
-          </button>
-        </div>
       </form>
-    </div>
-
+  </div>
     <!--map-ection4.................................. -->
-      <div class="container-fluid mb-5">
+      <div class="container-fluid mt-5">
         <div class="row">
           <div class="col-md-12 col-lg-12 h-75">
             <iframe
@@ -404,7 +363,7 @@
                 </div>
                 <button
                   type="submit"
-                  class="contect-submit-btn btn-primary rounded-3 w-100 mt-3 fs-6 text-white"
+                  class="contect-submit-btn border border-0 rounded-3 w-100 mt-3 fs-6 text-white"
                 >
                   Subscribe Now <i class="fas fa-arrow-right ms-4"></i>
                 </button>
