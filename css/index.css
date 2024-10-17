@@ -344,3 +344,112 @@
     font-size: 1.1rem;
     margin-bottom: 10px;
   }
+
+
+
+  /* Home course review slider */
+ 
+  .carousel-item {
+    padding: 20px;
+  }
+
+  .rating-component {
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+  }
+
+  .rating-component i {
+    color: orange;
+  }
+
+  .reviews,
+  .video-time {
+    margin-left: 5px;
+    color: #6c757d;
+  }
+
+  .bookmark {
+    margin-left: 50px;
+    cursor: pointer;
+  }
+
+  .course-title {
+    font-size: 20px;
+    font-weight: bold;
+    color: #6f42c1;
+  }
+
+  .course-meta {
+    color: #6c757d;
+    font-size: 14px;
+  }
+
+  .course-price {
+    font-size: 24px;
+    font-weight: bold;
+    color: #000;
+  }
+
+  .original-price {
+    text-decoration: line-through;
+    color: #6c757d;
+    margin-left: 10px;
+  }
+
+  .enroll-now {
+    color: #6f42c1;
+    font-weight: bold;
+    font-size: 16px;
+    text-decoration: none;
+  }
+
+  .enroll-now:hover {
+    text-decoration: underline;
+  }
+
+  .carousel-container {
+    position: relative;
+    width: 90%;
+    margin: auto;
+  }
+  .carousel-buttons {
+    position: absolute;
+    z-index: 1;
+    top: 5px;
+    width: 20%;
+    display: flex;
+    justify-content: space-between;
+  }
+  .carousel-buttons .btn-arrows {
+    background-color: transparent;
+    border: none;
+    outline: none;
+    color: #6c63ff;
+    padding: 10px 20px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: color 0.3s ease;
+  }
+  .carousel-buttons .btn-arrows:hover {
+    color: #ff9000;
+  }
+  .card {
+    min-width: 30%;
+    margin-right: 10px;
+  }
+  /* Responsive styles for mobile */
+  @media (max-width: 768px) {
+    .card {
+      min-width: 90%;
+    }
+    .carousel-buttons {
+      position: absolute;
+      right: 0;
+      z-index: 1;
+      top: 10px;
+      width: 30%;
+      display: flex;
+      justify-content: space-between;
+    }
+  }
