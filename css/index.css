@@ -6,6 +6,23 @@
 
 }
  /* home - section -1  */
+ .img-meta {
+  top: 40px;
+  animation: scaleInOut 4s ease-in-out infinite;
+}
+
+@keyframes scaleInOut {
+  0% {
+    transform: scale(1); /* Original size */
+  }
+  50% {
+    transform: scale(1.2); /* Scaled up */
+  }
+  100% {
+    transform: scale(1); /* Back to original size */
+  }
+}
+
  .hero-section {
     padding: 100px 0;
     text-align: left;
