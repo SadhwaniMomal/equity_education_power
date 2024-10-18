@@ -78,6 +78,14 @@
     height: auto;
 }
 
+@media (max-width: 768px) {
+    .navbar-brand img{
+        width: 100%;
+        height: 13vh;
+    }
+    
+}
+
 .navbar-nav .nav-item .nav-link {
     margin-right: 20px;
 }
