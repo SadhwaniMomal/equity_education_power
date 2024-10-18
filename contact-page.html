@@ -99,81 +99,83 @@
       </div>
     </div>
 
-    <!-- Navbar Section -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="#">
-          <img src="image/transparent_logo.png" alt="Logo" style="width: 15vh;" />
-        </a>
+   <!-- Navbar Section -->
+   <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">
+        <img src="image/transparent_logo.png" alt="Logo" style="width: 15vh;" />
+      </a>
 
-        <!-- Section for small screens with search and Enroll button -->
-        <div
-          class="d-none d-sm-flex d-lg-none justify-content-center align-items-center"
-        >
-          <i class="fas fa-search me-3" aria-label="Search"></i>
-          <span class="mx-2">|</span>
-          <i class="fa-regular fa-user me-1" aria-label="User Profile"></i>
-          <span class="me-3">Admin</span>
-          <button class="btn btn-enroll-s m-0 d-block my-3">Enroll Now</button>
+      <!-- Section for small screens with search and Enroll button -->
+      <div
+        class="d-none d-sm-flex d-lg-none justify-content-center align-items-center"
+      >
+        <i class="fas fa-search me-3" aria-label="Search"></i>
+        <span class="mx-2">|</span>
+        <i class="fa-regular fa-user me-1" aria-label="User Profile"></i>
+        <span class="me-3">Admin</span>
+        <button class="btn btn-enroll-s ms-2">Enroll Now</button>
+      </div>
+
+      <button
+        class="navbar-toggler-btn d-flex d-lg-none"
+        type="button"
+        data-bs-toggle="offcanvas"
+        data-bs-target="#offcanvasNavbar"
+        aria-controls="offcanvasNavbar"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div
+        class="offcanvas offcanvas-start"
+        tabindex="-1"
+        id="offcanvasNavbar"
+      >
+        <div class="offcanvas-header">
+          <a class="navbar-brand" href="#">
+            <img src="image/transparent_logo.png" alt="Logo" style="width: 20vh;" />
+          </a>
+          <button
+            type="button"
+            class="btn-close-custom"
+            data-bs-dismiss="offcanvas"
+          >
+            <i class="fas fa-times"></i>
+          </button>
         </div>
-
-        <button
-          class="navbar-toggler-btn d-flex d-lg-none"
-          type="button"
-          data-bs-toggle="offcanvas"
-          data-bs-target="#offcanvasNavbar"
-          aria-controls="offcanvasNavbar"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div
-          class="offcanvas offcanvas-start"
-          tabindex="-1"
-          id="offcanvasNavbar"
-        >
-          <div class="offcanvas-header">
-            <a class="navbar-brand" href="#">
-              <img src="image/transparent_logo.png" alt="Logo" style="width: 20vh;" />
-            </a>
-            <button
-              type="button"
-              class="btn-close-custom"
-              data-bs-dismiss="offcanvas"
-            >
-              <i class="fas fa-times"></i>
+        <div class="offcanvas-body">
+          <ul
+            class="navbar-nav mx-auto my-3 mb-lg-0 text-sm-start text-lg-center"
+          >
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link " href="explore.html">Explore</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="contact-page.html">Contact Us</a>
+            </li>
+          </ul>
+          <div
+            class="d-md-none d-lg-flex justify-content-lg-center justify-content-sm-start align-items-lg-center align-items-sm-start text-sm-start text-lg-center"
+          >
+            <i
+              class="fas fa-search me-3 d-none d-lg-flex"
+              aria-label="Search"
+            ></i>
+            <i class="fa-regular fa-user me-1" aria-label="User Profile"></i>
+            <span class="me-3">Admin</span>
+            <button class="btn btn-enroll-s m-0 d-block my-3">
+              Enroll Now
             </button>
-          </div>
-          <div class="offcanvas-body">
-            <ul
-              class="navbar-nav mx-auto my-3 mb-lg-0 text-sm-start text-lg-center"
-            >
-              <li class="nav-item">
-                <a class="nav-link" href="index.html">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="about.html">About Us</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link active" href="contact-page.html"
-                  >Contact Us</a
-                >
-              </li>
-            </ul>
-            <div
-              class="d-md-none d-lg-flex justify-content-lg-center justify-content-sm-start align-items-lg-center align-items-sm-start text-sm-start text-lg-center"
-            >
-              <i
-                class="fas fa-search me-3 d-none d-lg-flex"
-                aria-label="Search"
-              ></i>
-              <i class="fa-regular fa-user me-1" aria-label="User Profile"></i>
-              <span class="me-3">Admin</span>
-              <button class="btn btn-enroll-s d-block my-3">Enroll Now</button>
-            </div>
           </div>
         </div>
       </div>
-    </nav>
+    </div>
+  </nav>
+
+
     <!-- /* section1...................... */ -->
     <!-- Main container for the background and content -->
     <div class="container-fluid custom-background">

@@ -22,7 +22,11 @@ body {
 
 /* Custom background with a gradient for the container */
 .custom-background {
-  background: linear-gradient(135deg, var(--primary-color), var(--primary-color)); /* Blue gradient */
+  /* background: linear-gradient(135deg, var(--primary-color), var(--primary-color));  */
+  background-image: url("../website_img/img-9.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
   color: white; /* White text color */
   position: relative; /* Relative positioning to control child elements */
   overflow: hidden; /* Hide any overflow from the floating elements */
