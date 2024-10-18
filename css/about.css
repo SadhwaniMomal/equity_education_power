@@ -22,8 +22,7 @@ body {
 
 /* Custom background with a gradient for the container */
 .custom-background {
-  /* background: linear-gradient(135deg, var(--primary-color), var(--primary-color));  */
-  background-image: url("../website_img/img-9.jpg");
+  background: linear-gradient(135deg, var(--primary-color), var(--primary-color)); 
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
