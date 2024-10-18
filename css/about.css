@@ -15,7 +15,10 @@ body {
   --primary-color: #ccda3a;
   --secondary-color: #333;
   --hover-color: #888;
-  --main-color: #258d48;
+  /* --main-color: #258d48; */
+  --main-color: #000000;
+  /* --gray-text: #808080 ; */
+  --gray-text: #ffff ;
 
 }
 /* about container section css */
@@ -141,7 +144,7 @@ body {
 
 /* Breadcrumb link styling */
 .breadcrumb-item.active {
-  color: #ffa500; /* Link color (orange) */
+  color: var(--main-color); /* Link color (orange) */
 }
 
 /* Styling for breadcrumb arrow icons */
@@ -382,7 +385,7 @@ body {
   color: white;
   padding: 30px 0;
   text-align: center;
-  opacity: 0.7;
+  color: var(--gray-text); /*
   border-radius: 10px; /* Rounded edges for smooth appearance */
 }
 
@@ -626,7 +629,7 @@ body {
 
 /* Icon styling inside the accordion header */
 .accordion-header .icon {
-  background-color: #ffa500;
+  background-color: var(--main-color);
   margin-right: 10px;
   font-size: 1.5rem;
   width: 35px;

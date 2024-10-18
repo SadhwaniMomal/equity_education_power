@@ -11,7 +11,9 @@
     --primary-color: #ccda3a;
     --secondary-color: #333;
     --hover-color: #888;
-    --main-color: #258d48;
+    /* --main-color: #258d48; */
+  --main-color: #000000;
+
   
   }
 .custom-col {
